@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My blog</title>
+  </head>
+  <body id="top">
+    <!-- NAV-BAR  -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#"><div class="navbar-link">Home</div></a>
+
+        <a href="#"> <div class="navbar-link">Topics</div> </a>
+
+        <a href="#"> <div class="navbar-link">Featured Post</div> </a>
+
+        <a href="#"> <div class="navbar-link">Recent Post</div> </a>
+
+        <a href="#"> <div class="navbar-link">Contact</div> </a>
+      </div>
+      <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+      <img src="./images/sun.png" id="icon" />
+    </nav>
+
+    <!-- SCROLL BUTTON -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="./images/up.png" style="height: 3rem; width: 3.5rem" />
+    </button>
+
+    <main>
+      <!-- HERO  -->
+
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <!-- HERO DETAILS  -->
+
+          <div class="hero-details">
+            <div class="hero-content">
+              <p class="hero-subtitle">Hey visitor! I'm</p>
+              <h1 class="headline1">Ananya</h1>
+
+              <!-- HERO TEXT  -->
+              <div class="hero-text-container">
+                <div class="hero-text">
+                  <ul class="text-list">
+                    <li class="list-item">Developer</li>
+                    <li class="list-item">Traveller</li>
+                    <li class="list-item">Singer</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Type your email address"
+                  required
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <button class="btn"><span>Subscribe</span></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- BLOB  -->
+
+          <div class="blob">
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 310 350"
+            >
+              <path
+                d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"
+              />
+            </svg>
+          </div>
+
+          <!-- HERO IMAGE  -->
+          <div class="hero-image">
+            <img src="./images/profile.png" alt="Profile Image" />
+          </div>
+        </div>
+
+        <!-- HERO BANNER  -->
+        <p class="banner-text" style="margin-bottom: 2rem">Hot Topics</p>
+        <div class="hero-banner">
+          <div class="banner-img">
+            <div class="h-scroll">
+              <img src="./images/featured-1.png" alt="img1" />
+              <img src="./images/featured-2.png" alt="img2" />
+              <img src="./images/featured-3.png" alt="img3" />
+              <img src="./images/featured-4.png" alt="img4" />
+              <img src="./images/featured-5.png" alt="img5" />
+              <img src="./images/featured-1.png" alt="img1" />
+              <img src="./images/featured-2.png" alt="img2" />
+              <img src="./images/featured-3.png" alt="img3" />
+              <img src="./images/featured-4.png" alt="img4" />
+              <img src="./images/featured-5.png" alt="img5" />
+            </div>
+          </div>
+
+          <div class="banner-timer">
+            <h3>Upcoming Blog</h3>
+            <div class="timer">
+              <p id="demo" style="font-size: 30px"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR TAGS  -->
+
+      <section class="popular_tags">
+        <div class="popular-tags-container">
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">Popular Tags</span>
+          </h2>
+
+          <p class="section-text">Most searched keywords</p>
+
+          <div class="popular-grid-list">
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag1.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Travel"
+                />
+
+                <p class="btn-text">Travel</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag2.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Culture"
+                />
+
+                <p class="btn-text">Culture</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag3.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Lifestyle"
+                />
+
+                <p class="btn-text">Lifestyle</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag4.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Fashion"
+                />
+
+                <p class="btn-text">Fashion</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag5.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Food"
+                />
+
+                <p class="btn-text">Food</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag6.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Space"
+                />
+
+                <p class="btn-text">Space</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag7.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Animal"
+                />
+
+                <p class="btn-text">Animal</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag8.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Minimal"
+                />
+
+                <p class="btn-text">Minimal</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag9.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Interior"
+                />
+
+                <p class="btn-text">Interior</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag10.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Plant"
+                />
+
+                <p class="btn-text">Plant</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag11.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Nature"
+                />
+
+                <p class="btn-text">Nature</p>
+              </button>
+            </div>
+
+            <div>
+              <button class="card-tag-btn">
+                <img
+                  src="./images/tag12.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Business"
+                />
+
+                <p class="btn-text">Business</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECENT POST  -->
+
+      <div class="section recent-post" id="recent">
+        <div class="recent-post-container">
+          <div class="post-main">
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Recent posts</span>
+            </h2>
+
+            <p class="section-text">Don't miss the latest trends</p>
+
+            <ul class="post-grid-list">
+              <li>
+                <div class="recent-post-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 271; --height: 258"
+                  >
+                    <img
+                      src="./images/recent-post-1.jpg"
+                      width="271"
+                      height="258"
+                      loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2"
+                        >Helpful Tips for Working from Home as a Freelancer</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound
+                      and the and bland moral misheard roadrunner flapped lynx
+                      far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 271; --height: 258"
+                  >
+                    <img
+                      src="./images/recent-post-2.jpg"
+                      width="271"
+                      height="258"
+                      loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2"
+                        >Helpful Tips for Working from Home as a Freelancer</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound
+                      and the and bland moral misheard roadrunner flapped lynx
+                      far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- COMMENT SECTION  -->
+
+          <div class="post-aside-grid-list">
+            <h3 class="headline headline-2 aside-title">
+              <span class="span">Last Comment</span>
+            </h3>
+            <ul class="comment-list">
+              <li>
+                <div class="comment-card">
+                  <blockquote class="card-text">
+                    “ Gosh jaguar ostrich quail one excited dear hello and bound
+                    and the and bland moral misheard roadrunner “
+                  </blockquote>
+
+                  <div class="profile-card">
+                    <figure class="profile-banner img-holder">
+                      <img
+                        src="./images/author-6.png"
+                        width="32"
+                        height="32"
+                        loading="lazy"
+                        alt="Jane Cooper"
+                      />
+                    </figure>
+
+                    <div class="profile-name">
+                      <p class="card-title">Jane Cooper</p>
+
+                      <time class="card-date" datetime="2022-04-15"
+                        >15 April 2022</time
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="comment-card">
+                  <blockquote class="card-text">
+                    “ Gosh jaguar ostrich quail one excited dear hello and bound
+                    and the and bland moral misheard roadrunner “
+                  </blockquote>
+
+                  <div class="profile-card">
+                    <figure class="profile-banner img-holder">
+                      <img
+                        src="./images/author-7.png"
+                        width="32"
+                        height="32"
+                        loading="lazy"
+                        alt="Jane Cooper"
+                      />
+                    </figure>
+
+                    <div class="profile-name">
+                      <p class="card-title">Ann Joe</p>
+
+                      <time class="card-date" datetime="2022-04-15"
+                        >15 April 2022</time
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div>© Developed by Ananya Ghoshal</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
