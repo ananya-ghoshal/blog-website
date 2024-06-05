@@ -246,18 +246,18 @@ body {
 /* SCROLL BUTTON  */
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 40px; /* Place the button at the bottom of the page */
-  right: 50px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--bg-carolina-blue); /* Set a background color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 100%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--bg-carolina-blue);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 18px;
 }
 
 /* HERO SECTION */
