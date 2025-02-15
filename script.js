@@ -14,7 +14,7 @@ icon.onclick = function myFunction() {
 // UPCOMING BLOG TIMER
 
 // Set the date we're counting down to
-var countDownDate = new Date("June 27, 2024 15:37:25").getTime();
+var countDownDate = new Date("June 27, 2025 15:37:25").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function () {
